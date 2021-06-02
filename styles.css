@@ -1,0 +1,33 @@
+html {
+        background-color:black;
+        background-image:linear-gradient(rgb(0, 0, 71), black);
+        height:100%;
+}
+/* To Change anyhting about the tabs */
+.tablink {
+    background-color: black;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    width: 25%;
+    font-size: 22px;
+    font-family: "Lobster";
+}
+/* To Change The Hover Color */
+.tablink:hover {
+    background-color: #777;
+}
+/* Style the tab content */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+}
+#ArtofJay {background-color:rgb(52, 0, 94)}
+#AboutMe {background-color:rgb(52, 0, 94)}
+#Donate {background-color:rgb(52, 0, 94)}
+#Suggestions {background-color:rgb(52, 0, 94)}

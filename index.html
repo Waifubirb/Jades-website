@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Art of Jay</title>
+    
+    <!-- StyleSheet for CSS-->
+<link rel="stylesheet" type="text/css" href="styles.css">
+<!-- Google Fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<!-- Font Icons-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+<body>
+    <div id="ArtofJay" class="tabcontent">
+        <h1>The Art of Jay</h1>
+        <p>This page is dedicated to the Art that Jaysolation has made.</p>
+    </div>
+    <div id="AboutMe" class="tabcontent">
+        <h1>Jaysolation</h1>
+        <p>I'm a guy from Denmark, Who makes art as a hobby, I usually post them on here just to share them with you all</p>
+        <h2>My Social Links:</h2>
+        <a href="Twitch.tv/Jaysolation"style="color:white">Twitch Channel</a>
+        <i class="fab fa-twitch"></i>
+        <a href="https://www.youtube.com/jaysolation"style="color:white">Youtube Channel</a>
+        <i class="fab fa-youtube"></i>
+    </div>
+    <div id="Donate" class="tabcontent">
+        <h2>If You'd like to Donate use the link below</h2>
+        <a href="https://paypal.me/jaysolationyt?locale.x=da_DK"style="color:white">Donate Via PayPal</a>
+        <i class="fab fa-paypal"></i>
+    </div> <!-- Below is for comment field-->
+    <div id="Suggestions" class="tabcontent">
+        <h1>Suggestion Box</h1>
+        <p>If You have any suggestions regarding the site or art, Put it here </p>
+  </div>
+    
+    <button class="tablink" onclick="openCity('ArtofJay', this, 'red')" id="defaultOpen">Art of Jay</button>
+    <button class="tablink" onclick="openCity('AboutMe', this, 'blue')">About Me</button>
+    <button class="tablink" onclick="openCity('Donate', this, 'orange')">Donate</button>
+    <button class="tablink" onclick="openCity('Suggestions', this, 'orange')">Suggestions</button>
+
+    <script>
+        function openCity(cityName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(cityName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+        
+        }
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
+</body>
+</html>
